@@ -5,7 +5,7 @@ const PG_PASSWORD = process.env.pg_password
 const PG_DATABASE = process.env.pg_databse
 const PG_HOST = process.env.pg_host
 const PG_PORT = process.env.pg_port
-const PORT = process.env.port
+const PORT = process.env.PORT
 
 module.exports = {
 	PG_USER,

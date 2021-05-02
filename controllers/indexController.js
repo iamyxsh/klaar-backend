@@ -12,7 +12,7 @@ const autocomplete = expressAsyncHandler(async (req, res) => {
 		)
 		.then((data) => data.rows)
 
-	res.json(auto_res)
+	res.json({ branches: auto_res })
 })
 
 const match = expressAsyncHandler(async (req, res) => {
@@ -35,7 +35,7 @@ const match = expressAsyncHandler(async (req, res) => {
 		)
 		.then((data) => data.rows)
 
-	res.json(match_res)
+	res.json({ branches: match_res })
 })
 
 module.exports = { match, autocomplete }
